@@ -22,7 +22,9 @@ jobs:
       - run: python -m pip install "pytest>=8"
       - run: python -m pytest -q
       - name: Witness graph for a hidden-cause incident (must escalate)
-        run: python -m faultweaver explain inc19 | tee build.json && grep -q '"decision": "escalate"' build.json
+        run: |
+          python -m faultweaver explain inc19 | tee explain.json
+          grep -q '"decision": "escalate"' explain.json
       - name: Benchmark
         run: python -m faultweaver bench --out build/reports
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
