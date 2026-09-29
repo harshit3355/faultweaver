@@ -1,0 +1,4458 @@
+{
+  "seed": 7,
+  "tau": 0.6,
+  "tau_conf_matched": 0.52,
+  "probe_budget": 3,
+  "catalogue": {
+    "incidents": 24,
+    "summary": {
+      "anomaly_pagerank": {
+        "n": 24,
+        "top1": 0.1667,
+        "top3": 0.5,
+        "top1_with_fault": 0.1667,
+        "correct_fix": 0.1667,
+        "unsafe": 0.8333,
+        "unsafe_n": 20,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.8333,
+        "mean_probes": 0.0
+      },
+      "log_reader": {
+        "n": 24,
+        "top1": 0.8333,
+        "top3": 0.8333,
+        "top1_with_fault": 0.75,
+        "correct_fix": 0.75,
+        "unsafe": 0.25,
+        "unsafe_n": 6,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.25,
+        "mean_probes": 0.0
+      },
+      "blind_unaware": {
+        "n": 24,
+        "top1": 0.5833,
+        "top3": 0.6667,
+        "top1_with_fault": 0.5417,
+        "correct_fix": 0.5417,
+        "unsafe": 0.4583,
+        "unsafe_n": 11,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.4583,
+        "mean_probes": 0.0
+      },
+      "gala_like": {
+        "n": 24,
+        "top1": 0.7917,
+        "top3": 1.0,
+        "top1_with_fault": 0.7083,
+        "correct_fix": 0.7083,
+        "unsafe": 0.2917,
+        "unsafe_n": 7,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.2917,
+        "mean_probes": 0.0
+      },
+      "confidence_gate": {
+        "n": 24,
+        "top1": 0.7917,
+        "top3": 1.0,
+        "top1_with_fault": 0.7083,
+        "correct_fix": 0.6667,
+        "unsafe": 0.2083,
+        "unsafe_n": 5,
+        "escalated": 0.125,
+        "unsafe_given_act": 0.2381,
+        "mean_probes": 0.0
+      },
+      "dwc_no_probes": {
+        "n": 24,
+        "top1": 0.7917,
+        "top3": 1.0,
+        "top1_with_fault": 0.7083,
+        "correct_fix": 0.5833,
+        "unsafe": 0.0833,
+        "unsafe_n": 2,
+        "escalated": 0.3333,
+        "unsafe_given_act": 0.125,
+        "mean_probes": 0.0
+      },
+      "dwc_no_penalties": {
+        "n": 24,
+        "top1": 0.7917,
+        "top3": 1.0,
+        "top1_with_fault": 0.7083,
+        "correct_fix": 0.7083,
+        "unsafe": 0.2083,
+        "unsafe_n": 5,
+        "escalated": 0.0833,
+        "unsafe_given_act": 0.2273,
+        "mean_probes": 0.292
+      },
+      "faultweaver": {
+        "n": 24,
+        "top1": 0.7917,
+        "top3": 1.0,
+        "top1_with_fault": 0.75,
+        "correct_fix": 0.75,
+        "unsafe": 0.0833,
+        "unsafe_n": 2,
+        "escalated": 0.1667,
+        "unsafe_given_act": 0.1,
+        "mean_probes": 0.625
+      }
+    },
+    "rows": {
+      "inc01-db-memory": {
+        "fault": "resource_exhaustion",
+        "root": "db",
+        "negative": false,
+        "note": "full visibility",
+        "anomaly_pagerank": {
+          "id": "inc01-db-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc01-db-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc01-db-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc01-db-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc01-db-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8352
+        },
+        "dwc_no_probes": {
+          "id": "inc01-db-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7083
+        },
+        "dwc_no_penalties": {
+          "id": "inc01-db-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7083
+        },
+        "faultweaver": {
+          "id": "inc01-db-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7083
+        }
+      },
+      "inc02-payment-deploy": {
+        "fault": "bad_deploy",
+        "root": "payment",
+        "negative": false,
+        "note": "full visibility",
+        "anomaly_pagerank": {
+          "id": "inc02-payment-deploy",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc02-payment-deploy",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc02-payment-deploy",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc02-payment-deploy",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc02-payment-deploy",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8098
+        },
+        "dwc_no_probes": {
+          "id": "inc02-payment-deploy",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8398
+        },
+        "dwc_no_penalties": {
+          "id": "inc02-payment-deploy",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8398
+        },
+        "faultweaver": {
+          "id": "inc02-payment-deploy",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8398
+        }
+      },
+      "inc03-catalog-config": {
+        "fault": "config_error",
+        "root": "catalog",
+        "negative": false,
+        "note": "full visibility",
+        "anomaly_pagerank": {
+          "id": "inc03-catalog-config",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "db"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc03-catalog-config",
+          "decision": "act",
+          "action": [
+            "revert_config",
+            "catalog"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc03-catalog-config",
+          "decision": "act",
+          "action": [
+            "revert_config",
+            "catalog"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc03-catalog-config",
+          "decision": "act",
+          "action": [
+            "revert_config",
+            "catalog"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc03-catalog-config",
+          "decision": "act",
+          "action": [
+            "revert_config",
+            "catalog"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8219
+        },
+        "dwc_no_probes": {
+          "id": "inc03-catalog-config",
+          "decision": "act",
+          "action": [
+            "revert_config",
+            "catalog"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8758
+        },
+        "dwc_no_penalties": {
+          "id": "inc03-catalog-config",
+          "decision": "act",
+          "action": [
+            "revert_config",
+            "catalog"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8758
+        },
+        "faultweaver": {
+          "id": "inc03-catalog-config",
+          "decision": "act",
+          "action": [
+            "revert_config",
+            "catalog"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8758
+        }
+      },
+      "inc04-cache-slow": {
+        "fault": "dependency_latency",
+        "root": "cache",
+        "negative": false,
+        "note": "full visibility",
+        "anomaly_pagerank": {
+          "id": "inc04-cache-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc04-cache-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc04-cache-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc04-cache-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc04-cache-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8403
+        },
+        "dwc_no_probes": {
+          "id": "inc04-cache-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8611
+        },
+        "dwc_no_penalties": {
+          "id": "inc04-cache-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8666
+        },
+        "faultweaver": {
+          "id": "inc04-cache-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8611
+        }
+      },
+      "inc05-cart-partition": {
+        "fault": "network_partition",
+        "root": "cart",
+        "negative": false,
+        "note": "full visibility",
+        "anomaly_pagerank": {
+          "id": "inc05-cart-partition",
+          "decision": "act",
+          "action": [
+            "failover",
+            "db"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc05-cart-partition",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "cart"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc05-cart-partition",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "checkout"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc05-cart-partition",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "cart"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc05-cart-partition",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "cart"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8077
+        },
+        "dwc_no_probes": {
+          "id": "inc05-cart-partition",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "cart"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8896
+        },
+        "dwc_no_penalties": {
+          "id": "inc05-cart-partition",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "cart"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.9067
+        },
+        "faultweaver": {
+          "id": "inc05-cart-partition",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "cart"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8896
+        }
+      },
+      "inc06-worker-noisy": {
+        "fault": "noisy_neighbour",
+        "root": "worker",
+        "negative": false,
+        "note": "batch worker hogs node n4",
+        "anomaly_pagerank": {
+          "id": "inc06-worker-noisy",
+          "decision": "act",
+          "action": [
+            "failover",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc06-worker-noisy",
+          "decision": "act",
+          "action": [
+            "failover",
+            "embedding"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc06-worker-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "worker"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc06-worker-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "worker"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc06-worker-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "worker"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.5343
+        },
+        "dwc_no_probes": {
+          "id": "inc06-worker-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "worker"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6468
+        },
+        "dwc_no_penalties": {
+          "id": "inc06-worker-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "worker"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7488
+        },
+        "faultweaver": {
+          "id": "inc06-worker-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "worker"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6468
+        }
+      },
+      "inc07-vector-memory-untraced": {
+        "fault": "resource_exhaustion",
+        "root": "vector-store",
+        "negative": false,
+        "note": "root has no traces",
+        "anomaly_pagerank": {
+          "id": "inc07-vector-memory-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc07-vector-memory-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc07-vector-memory-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc07-vector-memory-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc07-vector-memory-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8275
+        },
+        "dwc_no_probes": {
+          "id": "inc07-vector-memory-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6474
+        },
+        "dwc_no_penalties": {
+          "id": "inc07-vector-memory-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6474
+        },
+        "faultweaver": {
+          "id": "inc07-vector-memory-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6474
+        }
+      },
+      "inc08-embedding-deploy-logs-only": {
+        "fault": "bad_deploy",
+        "root": "embedding",
+        "negative": false,
+        "note": "root visible through logs and deploy audit only",
+        "anomaly_pagerank": {
+          "id": "inc08-embedding-deploy-logs-only",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc08-embedding-deploy-logs-only",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "embedding"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc08-embedding-deploy-logs-only",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "embedding"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc08-embedding-deploy-logs-only",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "embedding"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc08-embedding-deploy-logs-only",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "embedding"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8447
+        },
+        "dwc_no_probes": {
+          "id": "inc08-embedding-deploy-logs-only",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.3875
+        },
+        "dwc_no_penalties": {
+          "id": "inc08-embedding-deploy-logs-only",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "embedding"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7751
+        },
+        "faultweaver": {
+          "id": "inc08-embedding-deploy-logs-only",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "embedding"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 1,
+          "score": 0.7751
+        }
+      },
+      "inc09-db-slow-dark": {
+        "fault": "dependency_latency",
+        "root": "db",
+        "negative": false,
+        "note": "root emits nothing; only callers see it",
+        "anomaly_pagerank": {
+          "id": "inc09-db-slow-dark",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "cache"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc09-db-slow-dark",
+          "decision": "act",
+          "action": [
+            "failover",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc09-db-slow-dark",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "payment"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc09-db-slow-dark",
+          "decision": "act",
+          "action": [
+            "failover",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc09-db-slow-dark",
+          "decision": "act",
+          "action": [
+            "failover",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8081
+        },
+        "dwc_no_probes": {
+          "id": "inc09-db-slow-dark",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.3934
+        },
+        "dwc_no_penalties": {
+          "id": "inc09-db-slow-dark",
+          "decision": "act",
+          "action": [
+            "failover",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7959
+        },
+        "faultweaver": {
+          "id": "inc09-db-slow-dark",
+          "decision": "act",
+          "action": [
+            "failover",
+            "db"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 1,
+          "score": 0.7868
+        }
+      },
+      "inc10-queue-partition-dark": {
+        "fault": "network_partition",
+        "root": "queue",
+        "negative": false,
+        "note": "root emits nothing",
+        "anomaly_pagerank": {
+          "id": "inc10-queue-partition-dark",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "db"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc10-queue-partition-dark",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "queue"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc10-queue-partition-dark",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "checkout"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc10-queue-partition-dark",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "queue"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc10-queue-partition-dark",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "queue"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.811
+        },
+        "dwc_no_probes": {
+          "id": "inc10-queue-partition-dark",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "queue"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7281
+        },
+        "dwc_no_penalties": {
+          "id": "inc10-queue-partition-dark",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "queue"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7281
+        },
+        "faultweaver": {
+          "id": "inc10-queue-partition-dark",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "queue"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7281
+        }
+      },
+      "inc11-auth-config-no-audit": {
+        "fault": "config_error",
+        "root": "auth",
+        "negative": false,
+        "note": "change audit missing: deploy vs config is ambiguous",
+        "anomaly_pagerank": {
+          "id": "inc11-auth-config-no-audit",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "db"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc11-auth-config-no-audit",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "auth"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc11-auth-config-no-audit",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "auth"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc11-auth-config-no-audit",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "auth"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc11-auth-config-no-audit",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "auth"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.8242
+        },
+        "dwc_no_probes": {
+          "id": "inc11-auth-config-no-audit",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.3833
+        },
+        "dwc_no_penalties": {
+          "id": "inc11-auth-config-no-audit",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "auth"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.7666
+        },
+        "faultweaver": {
+          "id": "inc11-auth-config-no-audit",
+          "decision": "act",
+          "action": [
+            "revert_config",
+            "auth"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 1,
+          "score": 0.8791
+        }
+      },
+      "inc12-checkout-deploy-cache-cron": {
+        "fault": "bad_deploy",
+        "root": "checkout",
+        "negative": false,
+        "note": "unrelated cache memory spike from a cron job",
+        "anomaly_pagerank": {
+          "id": "inc12-checkout-deploy-cache-cron",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "cache"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc12-checkout-deploy-cache-cron",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "checkout"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc12-checkout-deploy-cache-cron",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "cache"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc12-checkout-deploy-cache-cron",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "cache"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc12-checkout-deploy-cache-cron",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "cache"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.5227
+        },
+        "dwc_no_probes": {
+          "id": "inc12-checkout-deploy-cache-cron",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.4475
+        },
+        "dwc_no_penalties": {
+          "id": "inc12-checkout-deploy-cache-cron",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 3,
+          "score": 0.0
+        },
+        "faultweaver": {
+          "id": "inc12-checkout-deploy-cache-cron",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 3,
+          "score": 0.0
+        }
+      },
+      "inc13-provider-slow": {
+        "fault": "dependency_latency",
+        "root": "llm-provider",
+        "negative": false,
+        "note": "third-party model API is slow; the gateway is visible",
+        "anomaly_pagerank": {
+          "id": "inc13-provider-slow",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc13-provider-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "llm-provider"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc13-provider-slow",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc13-provider-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "llm-provider"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc13-provider-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "llm-provider"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7815
+        },
+        "dwc_no_probes": {
+          "id": "inc13-provider-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "llm-provider"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6233
+        },
+        "dwc_no_penalties": {
+          "id": "inc13-provider-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "llm-provider"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6233
+        },
+        "faultweaver": {
+          "id": "inc13-provider-slow",
+          "decision": "act",
+          "action": [
+            "failover",
+            "llm-provider"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6233
+        }
+      },
+      "inc14-llm-gateway-memory-vector-noise": {
+        "fault": "resource_exhaustion",
+        "root": "llm-gateway",
+        "negative": false,
+        "note": "red herring on a sibling",
+        "anomaly_pagerank": {
+          "id": "inc14-llm-gateway-memory-vector-noise",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc14-llm-gateway-memory-vector-noise",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc14-llm-gateway-memory-vector-noise",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc14-llm-gateway-memory-vector-noise",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc14-llm-gateway-memory-vector-noise",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.5194
+        },
+        "dwc_no_probes": {
+          "id": "inc14-llm-gateway-memory-vector-noise",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6947
+        },
+        "dwc_no_penalties": {
+          "id": "inc14-llm-gateway-memory-vector-noise",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6947
+        },
+        "faultweaver": {
+          "id": "inc14-llm-gateway-memory-vector-noise",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6947
+        }
+      },
+      "inc15-search-deploy-shared-collector": {
+        "fault": "bad_deploy",
+        "root": "search",
+        "negative": false,
+        "note": "correlated but true: one collector ships all n3 telemetry",
+        "anomaly_pagerank": {
+          "id": "inc15-search-deploy-shared-collector",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "embedding"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc15-search-deploy-shared-collector",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "search"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc15-search-deploy-shared-collector",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "search"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc15-search-deploy-shared-collector",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "search"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc15-search-deploy-shared-collector",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "search"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8354
+        },
+        "dwc_no_probes": {
+          "id": "inc15-search-deploy-shared-collector",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "search"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8657
+        },
+        "dwc_no_penalties": {
+          "id": "inc15-search-deploy-shared-collector",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "search"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8794
+        },
+        "faultweaver": {
+          "id": "inc15-search-deploy-shared-collector",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "search"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8657
+        }
+      },
+      "inc16-faulty-collector-n3": {
+        "fault": "resource_exhaustion",
+        "root": "cart",
+        "negative": false,
+        "note": "correlated and wrong: the n3 collector inflates latency, errors, error logs and error spans of every n3 service",
+        "anomaly_pagerank": {
+          "id": "inc16-faulty-collector-n3",
+          "decision": "act",
+          "action": [
+            "failover",
+            "db"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc16-faulty-collector-n3",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "cart"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc16-faulty-collector-n3",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "cart"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc16-faulty-collector-n3",
+          "decision": "act",
+          "action": [
+            "failover",
+            "cache"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc16-faulty-collector-n3",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.5121
+        },
+        "dwc_no_probes": {
+          "id": "inc16-faulty-collector-n3",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.5787
+        },
+        "dwc_no_penalties": {
+          "id": "inc16-faulty-collector-n3",
+          "decision": "act",
+          "action": [
+            "failover",
+            "cache"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.647
+        },
+        "faultweaver": {
+          "id": "inc16-faulty-collector-n3",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 3,
+          "score": 0.0
+        }
+      },
+      "inc17-cache-noisy": {
+        "fault": "noisy_neighbour",
+        "root": "cache",
+        "negative": false,
+        "note": "cache hog throttles db",
+        "anomaly_pagerank": {
+          "id": "inc17-cache-noisy",
+          "decision": "act",
+          "action": [
+            "failover",
+            "db"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc17-cache-noisy",
+          "decision": "act",
+          "action": [
+            "failover",
+            "db"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc17-cache-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc17-cache-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc17-cache-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.5695
+        },
+        "dwc_no_probes": {
+          "id": "inc17-cache-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6346
+        },
+        "dwc_no_penalties": {
+          "id": "inc17-cache-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6782
+        },
+        "faultweaver": {
+          "id": "inc17-cache-noisy",
+          "decision": "act",
+          "action": [
+            "throttle",
+            "cache"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6346
+        }
+      },
+      "inc18-recommender-memory-n3-untraced": {
+        "fault": "resource_exhaustion",
+        "root": "recommender",
+        "negative": false,
+        "note": "node n3 untraced",
+        "anomaly_pagerank": {
+          "id": "inc18-recommender-memory-n3-untraced",
+          "decision": "act",
+          "action": [
+            "failover",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc18-recommender-memory-n3-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "recommender"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc18-recommender-memory-n3-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "recommender"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc18-recommender-memory-n3-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "recommender"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc18-recommender-memory-n3-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "recommender"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8063
+        },
+        "dwc_no_probes": {
+          "id": "inc18-recommender-memory-n3-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "recommender"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6241
+        },
+        "dwc_no_penalties": {
+          "id": "inc18-recommender-memory-n3-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "recommender"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6241
+        },
+        "faultweaver": {
+          "id": "inc18-recommender-memory-n3-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "recommender"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.6241
+        }
+      },
+      "inc19-payment-dark-pci": {
+        "fault": "config_error",
+        "root": "payment",
+        "negative": false,
+        "note": "PCI zone: no telemetry exported and probes not permitted; the gate should escalate",
+        "anomaly_pagerank": {
+          "id": "inc19-payment-dark-pci",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "queue"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc19-payment-dark-pci",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc19-payment-dark-pci",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "checkout"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc19-payment-dark-pci",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc19-payment-dark-pci",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.7349
+        },
+        "dwc_no_probes": {
+          "id": "inc19-payment-dark-pci",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.0956
+        },
+        "dwc_no_penalties": {
+          "id": "inc19-payment-dark-pci",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "payment"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.6374
+        },
+        "faultweaver": {
+          "id": "inc19-payment-dark-pci",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 2,
+          "score": 0.113
+        }
+      },
+      "inc20-provider-dark": {
+        "fault": "dependency_latency",
+        "root": "llm-provider",
+        "negative": false,
+        "note": "external root with an uninstrumented gateway; nothing can witness the cause",
+        "anomaly_pagerank": {
+          "id": "inc20-provider-dark",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc20-provider-dark",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "assistant"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc20-provider-dark",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc20-provider-dark",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc20-provider-dark",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.6253
+        },
+        "dwc_no_probes": {
+          "id": "inc20-provider-dark",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.1786
+        },
+        "dwc_no_penalties": {
+          "id": "inc20-provider-dark",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 3,
+          "score": 0.0
+        },
+        "faultweaver": {
+          "id": "inc20-provider-dark",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 3,
+          "score": 0.0
+        }
+      },
+      "inc21-provider-dark-vector-memory": {
+        "fault": "dependency_latency",
+        "root": "llm-provider",
+        "negative": true,
+        "note": "true root is invisible; a coincident, independently witnessed vector-store memory problem looks like the cause",
+        "anomaly_pagerank": {
+          "id": "inc21-provider-dark-vector-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc21-provider-dark-vector-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "llm-gateway"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc21-provider-dark-vector-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc21-provider-dark-vector-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc21-provider-dark-vector-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.5647
+        },
+        "dwc_no_probes": {
+          "id": "inc21-provider-dark-vector-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.616
+        },
+        "dwc_no_penalties": {
+          "id": "inc21-provider-dark-vector-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.616
+        },
+        "faultweaver": {
+          "id": "inc21-provider-dark-vector-memory",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.616
+        }
+      },
+      "inc22-faulty-collector-mislabeled": {
+        "fault": "config_error",
+        "root": "search",
+        "negative": true,
+        "note": "the broken n4 collector's metrics, logs and spans are declared as separate prom/logs/otel sources; with honest labels (declared shared) the same incident is fixed correctly",
+        "anomaly_pagerank": {
+          "id": "inc22-faulty-collector-mislabeled",
+          "decision": "act",
+          "action": [
+            "failover",
+            "embedding"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc22-faulty-collector-mislabeled",
+          "decision": "act",
+          "action": [
+            "revert_config",
+            "search"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc22-faulty-collector-mislabeled",
+          "decision": "act",
+          "action": [
+            "failover",
+            "embedding"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc22-faulty-collector-mislabeled",
+          "decision": "act",
+          "action": [
+            "failover",
+            "embedding"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc22-faulty-collector-mislabeled",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.5131
+        },
+        "dwc_no_probes": {
+          "id": "inc22-faulty-collector-mislabeled",
+          "decision": "act",
+          "action": [
+            "failover",
+            "embedding"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.6579
+        },
+        "dwc_no_penalties": {
+          "id": "inc22-faulty-collector-mislabeled",
+          "decision": "act",
+          "action": [
+            "failover",
+            "embedding"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.6579
+        },
+        "faultweaver": {
+          "id": "inc22-faulty-collector-mislabeled",
+          "decision": "act",
+          "action": [
+            "failover",
+            "embedding"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": 0.6579
+        }
+      },
+      "inc23-assistant-deploy-untraced": {
+        "fault": "bad_deploy",
+        "root": "assistant",
+        "negative": false,
+        "note": "RAG path partially untraced",
+        "anomaly_pagerank": {
+          "id": "inc23-assistant-deploy-untraced",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "vector-store"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": true,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc23-assistant-deploy-untraced",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "assistant"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc23-assistant-deploy-untraced",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "assistant"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc23-assistant-deploy-untraced",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "assistant"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc23-assistant-deploy-untraced",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "assistant"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8125
+        },
+        "dwc_no_probes": {
+          "id": "inc23-assistant-deploy-untraced",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "assistant"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8058
+        },
+        "dwc_no_penalties": {
+          "id": "inc23-assistant-deploy-untraced",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "assistant"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8058
+        },
+        "faultweaver": {
+          "id": "inc23-assistant-deploy-untraced",
+          "decision": "act",
+          "action": [
+            "rollback",
+            "assistant"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.8058
+        }
+      },
+      "inc24-checkout-partition-shared": {
+        "fault": "network_partition",
+        "root": "checkout",
+        "negative": false,
+        "note": "gateway telemetry through one collector",
+        "anomaly_pagerank": {
+          "id": "inc24-checkout-partition-shared",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "db"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "log_reader": {
+          "id": "inc24-checkout-partition-shared",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "checkout"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "blind_unaware": {
+          "id": "inc24-checkout-partition-shared",
+          "decision": "act",
+          "action": [
+            "scale_out",
+            "api-gateway"
+          ],
+          "correct": false,
+          "unsafe": true,
+          "top1": false,
+          "top3": false,
+          "top1_fault": false,
+          "probes": 0,
+          "score": null
+        },
+        "gala_like": {
+          "id": "inc24-checkout-partition-shared",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "checkout"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": null
+        },
+        "confidence_gate": {
+          "id": "inc24-checkout-partition-shared",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "checkout"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.7278
+        },
+        "dwc_no_probes": {
+          "id": "inc24-checkout-partition-shared",
+          "decision": "escalate",
+          "action": null,
+          "correct": false,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 0,
+          "score": 0.5209
+        },
+        "dwc_no_penalties": {
+          "id": "inc24-checkout-partition-shared",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "checkout"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 1,
+          "score": 0.9198
+        },
+        "faultweaver": {
+          "id": "inc24-checkout-partition-shared",
+          "decision": "act",
+          "action": [
+            "reroute",
+            "checkout"
+          ],
+          "correct": true,
+          "unsafe": false,
+          "top1": true,
+          "top3": true,
+          "top1_fault": true,
+          "probes": 1,
+          "score": 0.8096
+        }
+      }
+    }
+  },
+  "sweep": {
+    "incidents": 240,
+    "per_level": 60,
+    "summary": {
+      "anomaly_pagerank": {
+        "n": 240,
+        "top1": 0.3125,
+        "top3": 0.6458,
+        "top1_with_fault": 0.3125,
+        "correct_fix": 0.3125,
+        "unsafe": 0.6875,
+        "unsafe_n": 165,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.6875,
+        "mean_probes": 0.0
+      },
+      "log_reader": {
+        "n": 240,
+        "top1": 0.7583,
+        "top3": 0.8042,
+        "top1_with_fault": 0.75,
+        "correct_fix": 0.75,
+        "unsafe": 0.25,
+        "unsafe_n": 60,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.25,
+        "mean_probes": 0.0
+      },
+      "blind_unaware": {
+        "n": 240,
+        "top1": 0.7208,
+        "top3": 0.7875,
+        "top1_with_fault": 0.7125,
+        "correct_fix": 0.7125,
+        "unsafe": 0.2875,
+        "unsafe_n": 69,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.2875,
+        "mean_probes": 0.0
+      },
+      "gala_like": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.8792,
+        "unsafe": 0.1208,
+        "unsafe_n": 29,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.1208,
+        "mean_probes": 0.0
+      },
+      "confidence_gate": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.8625,
+        "unsafe": 0.0917,
+        "unsafe_n": 22,
+        "escalated": 0.0458,
+        "unsafe_given_act": 0.0961,
+        "mean_probes": 0.0
+      },
+      "dwc_no_probes": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.6875,
+        "unsafe": 0.0375,
+        "unsafe_n": 9,
+        "escalated": 0.275,
+        "unsafe_given_act": 0.0517,
+        "mean_probes": 0.0
+      },
+      "dwc_no_penalties": {
+        "n": 240,
+        "top1": 0.9,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8917,
+        "correct_fix": 0.8917,
+        "unsafe": 0.0542,
+        "unsafe_n": 13,
+        "escalated": 0.0542,
+        "unsafe_given_act": 0.0573,
+        "mean_probes": 0.275
+      },
+      "faultweaver": {
+        "n": 240,
+        "top1": 0.9,
+        "top3": 0.9708,
+        "top1_with_fault": 0.9,
+        "correct_fix": 0.9,
+        "unsafe": 0.0458,
+        "unsafe_n": 11,
+        "escalated": 0.0542,
+        "unsafe_given_act": 0.0485,
+        "mean_probes": 0.442
+      }
+    },
+    "by_blind_level": {
+      "0%": {
+        "anomaly_pagerank": {
+          "n": 60,
+          "top1": 0.3667,
+          "top3": 0.7167,
+          "top1_with_fault": 0.3667,
+          "correct_fix": 0.3667,
+          "unsafe": 0.6333,
+          "unsafe_n": 38,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.6333,
+          "mean_probes": 0.0
+        },
+        "log_reader": {
+          "n": 60,
+          "top1": 0.8167,
+          "top3": 0.8667,
+          "top1_with_fault": 0.8167,
+          "correct_fix": 0.8167,
+          "unsafe": 0.1833,
+          "unsafe_n": 11,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.1833,
+          "mean_probes": 0.0
+        },
+        "blind_unaware": {
+          "n": 60,
+          "top1": 0.75,
+          "top3": 0.8333,
+          "top1_with_fault": 0.75,
+          "correct_fix": 0.75,
+          "unsafe": 0.25,
+          "unsafe_n": 15,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.25,
+          "mean_probes": 0.0
+        },
+        "gala_like": {
+          "n": 60,
+          "top1": 0.9,
+          "top3": 0.9667,
+          "top1_with_fault": 0.9,
+          "correct_fix": 0.9,
+          "unsafe": 0.1,
+          "unsafe_n": 6,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.1,
+          "mean_probes": 0.0
+        },
+        "confidence_gate": {
+          "n": 60,
+          "top1": 0.9,
+          "top3": 0.9667,
+          "top1_with_fault": 0.9,
+          "correct_fix": 0.9,
+          "unsafe": 0.0833,
+          "unsafe_n": 5,
+          "escalated": 0.0167,
+          "unsafe_given_act": 0.0847,
+          "mean_probes": 0.0
+        },
+        "dwc_no_probes": {
+          "n": 60,
+          "top1": 0.9,
+          "top3": 0.9667,
+          "top1_with_fault": 0.9,
+          "correct_fix": 0.8833,
+          "unsafe": 0.05,
+          "unsafe_n": 3,
+          "escalated": 0.0667,
+          "unsafe_given_act": 0.0536,
+          "mean_probes": 0.0
+        },
+        "dwc_no_penalties": {
+          "n": 60,
+          "top1": 0.9,
+          "top3": 0.9667,
+          "top1_with_fault": 0.9,
+          "correct_fix": 0.9,
+          "unsafe": 0.05,
+          "unsafe_n": 3,
+          "escalated": 0.05,
+          "unsafe_given_act": 0.0526,
+          "mean_probes": 0.15
+        },
+        "faultweaver": {
+          "n": 60,
+          "top1": 0.9,
+          "top3": 0.9667,
+          "top1_with_fault": 0.9,
+          "correct_fix": 0.9,
+          "unsafe": 0.05,
+          "unsafe_n": 3,
+          "escalated": 0.05,
+          "unsafe_given_act": 0.0526,
+          "mean_probes": 0.167
+        }
+      },
+      "10%": {
+        "anomaly_pagerank": {
+          "n": 60,
+          "top1": 0.2667,
+          "top3": 0.6167,
+          "top1_with_fault": 0.2667,
+          "correct_fix": 0.2667,
+          "unsafe": 0.7333,
+          "unsafe_n": 44,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.7333,
+          "mean_probes": 0.0
+        },
+        "log_reader": {
+          "n": 60,
+          "top1": 0.75,
+          "top3": 0.7667,
+          "top1_with_fault": 0.75,
+          "correct_fix": 0.75,
+          "unsafe": 0.25,
+          "unsafe_n": 15,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.25,
+          "mean_probes": 0.0
+        },
+        "blind_unaware": {
+          "n": 60,
+          "top1": 0.6667,
+          "top3": 0.7333,
+          "top1_with_fault": 0.6667,
+          "correct_fix": 0.6667,
+          "unsafe": 0.3333,
+          "unsafe_n": 20,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.3333,
+          "mean_probes": 0.0
+        },
+        "gala_like": {
+          "n": 60,
+          "top1": 0.85,
+          "top3": 0.95,
+          "top1_with_fault": 0.85,
+          "correct_fix": 0.85,
+          "unsafe": 0.15,
+          "unsafe_n": 9,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.15,
+          "mean_probes": 0.0
+        },
+        "confidence_gate": {
+          "n": 60,
+          "top1": 0.85,
+          "top3": 0.95,
+          "top1_with_fault": 0.85,
+          "correct_fix": 0.8333,
+          "unsafe": 0.1,
+          "unsafe_n": 6,
+          "escalated": 0.0667,
+          "unsafe_given_act": 0.1071,
+          "mean_probes": 0.0
+        },
+        "dwc_no_probes": {
+          "n": 60,
+          "top1": 0.85,
+          "top3": 0.95,
+          "top1_with_fault": 0.85,
+          "correct_fix": 0.6667,
+          "unsafe": 0.0333,
+          "unsafe_n": 2,
+          "escalated": 0.3,
+          "unsafe_given_act": 0.0476,
+          "mean_probes": 0.0
+        },
+        "dwc_no_penalties": {
+          "n": 60,
+          "top1": 0.8667,
+          "top3": 0.95,
+          "top1_with_fault": 0.8667,
+          "correct_fix": 0.8667,
+          "unsafe": 0.05,
+          "unsafe_n": 3,
+          "escalated": 0.0833,
+          "unsafe_given_act": 0.0545,
+          "mean_probes": 0.383
+        },
+        "faultweaver": {
+          "n": 60,
+          "top1": 0.8667,
+          "top3": 0.95,
+          "top1_with_fault": 0.8667,
+          "correct_fix": 0.8667,
+          "unsafe": 0.05,
+          "unsafe_n": 3,
+          "escalated": 0.0833,
+          "unsafe_given_act": 0.0545,
+          "mean_probes": 0.483
+        }
+      },
+      "20%": {
+        "anomaly_pagerank": {
+          "n": 60,
+          "top1": 0.35,
+          "top3": 0.6333,
+          "top1_with_fault": 0.35,
+          "correct_fix": 0.35,
+          "unsafe": 0.65,
+          "unsafe_n": 39,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.65,
+          "mean_probes": 0.0
+        },
+        "log_reader": {
+          "n": 60,
+          "top1": 0.75,
+          "top3": 0.8,
+          "top1_with_fault": 0.7333,
+          "correct_fix": 0.7333,
+          "unsafe": 0.2667,
+          "unsafe_n": 16,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.2667,
+          "mean_probes": 0.0
+        },
+        "blind_unaware": {
+          "n": 60,
+          "top1": 0.7333,
+          "top3": 0.7833,
+          "top1_with_fault": 0.7167,
+          "correct_fix": 0.7167,
+          "unsafe": 0.2833,
+          "unsafe_n": 17,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.2833,
+          "mean_probes": 0.0
+        },
+        "gala_like": {
+          "n": 60,
+          "top1": 0.9167,
+          "top3": 1.0,
+          "top1_with_fault": 0.9,
+          "correct_fix": 0.9,
+          "unsafe": 0.1,
+          "unsafe_n": 6,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.1,
+          "mean_probes": 0.0
+        },
+        "confidence_gate": {
+          "n": 60,
+          "top1": 0.9167,
+          "top3": 1.0,
+          "top1_with_fault": 0.9,
+          "correct_fix": 0.8667,
+          "unsafe": 0.0667,
+          "unsafe_n": 4,
+          "escalated": 0.0667,
+          "unsafe_given_act": 0.0714,
+          "mean_probes": 0.0
+        },
+        "dwc_no_probes": {
+          "n": 60,
+          "top1": 0.9167,
+          "top3": 1.0,
+          "top1_with_fault": 0.9,
+          "correct_fix": 0.6667,
+          "unsafe": 0.0,
+          "unsafe_n": 0,
+          "escalated": 0.3333,
+          "unsafe_given_act": 0.0,
+          "mean_probes": 0.0
+        },
+        "dwc_no_penalties": {
+          "n": 60,
+          "top1": 0.9167,
+          "top3": 1.0,
+          "top1_with_fault": 0.9,
+          "correct_fix": 0.9,
+          "unsafe": 0.0333,
+          "unsafe_n": 2,
+          "escalated": 0.0667,
+          "unsafe_given_act": 0.0357,
+          "mean_probes": 0.3
+        },
+        "faultweaver": {
+          "n": 60,
+          "top1": 0.9167,
+          "top3": 1.0,
+          "top1_with_fault": 0.9167,
+          "correct_fix": 0.9167,
+          "unsafe": 0.0167,
+          "unsafe_n": 1,
+          "escalated": 0.0667,
+          "unsafe_given_act": 0.0179,
+          "mean_probes": 0.5
+        }
+      },
+      "30%": {
+        "anomaly_pagerank": {
+          "n": 60,
+          "top1": 0.2667,
+          "top3": 0.6167,
+          "top1_with_fault": 0.2667,
+          "correct_fix": 0.2667,
+          "unsafe": 0.7333,
+          "unsafe_n": 44,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.7333,
+          "mean_probes": 0.0
+        },
+        "log_reader": {
+          "n": 60,
+          "top1": 0.7167,
+          "top3": 0.7833,
+          "top1_with_fault": 0.7,
+          "correct_fix": 0.7,
+          "unsafe": 0.3,
+          "unsafe_n": 18,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.3,
+          "mean_probes": 0.0
+        },
+        "blind_unaware": {
+          "n": 60,
+          "top1": 0.7333,
+          "top3": 0.8,
+          "top1_with_fault": 0.7167,
+          "correct_fix": 0.7167,
+          "unsafe": 0.2833,
+          "unsafe_n": 17,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.2833,
+          "mean_probes": 0.0
+        },
+        "gala_like": {
+          "n": 60,
+          "top1": 0.8833,
+          "top3": 0.9667,
+          "top1_with_fault": 0.8667,
+          "correct_fix": 0.8667,
+          "unsafe": 0.1333,
+          "unsafe_n": 8,
+          "escalated": 0.0,
+          "unsafe_given_act": 0.1333,
+          "mean_probes": 0.0
+        },
+        "confidence_gate": {
+          "n": 60,
+          "top1": 0.8833,
+          "top3": 0.9667,
+          "top1_with_fault": 0.8667,
+          "correct_fix": 0.85,
+          "unsafe": 0.1167,
+          "unsafe_n": 7,
+          "escalated": 0.0333,
+          "unsafe_given_act": 0.1207,
+          "mean_probes": 0.0
+        },
+        "dwc_no_probes": {
+          "n": 60,
+          "top1": 0.8833,
+          "top3": 0.9667,
+          "top1_with_fault": 0.8667,
+          "correct_fix": 0.5333,
+          "unsafe": 0.0667,
+          "unsafe_n": 4,
+          "escalated": 0.4,
+          "unsafe_given_act": 0.1111,
+          "mean_probes": 0.0
+        },
+        "dwc_no_penalties": {
+          "n": 60,
+          "top1": 0.9167,
+          "top3": 0.9667,
+          "top1_with_fault": 0.9,
+          "correct_fix": 0.9,
+          "unsafe": 0.0833,
+          "unsafe_n": 5,
+          "escalated": 0.0167,
+          "unsafe_given_act": 0.0847,
+          "mean_probes": 0.267
+        },
+        "faultweaver": {
+          "n": 60,
+          "top1": 0.9167,
+          "top3": 0.9667,
+          "top1_with_fault": 0.9167,
+          "correct_fix": 0.9167,
+          "unsafe": 0.0667,
+          "unsafe_n": 4,
+          "escalated": 0.0167,
+          "unsafe_given_act": 0.0678,
+          "mean_probes": 0.617
+        }
+      }
+    },
+    "faultweaver_unsafe": [
+      {
+        "id": "sweep-00-25",
+        "decision": "act",
+        "action": [
+          "failover",
+          "cache"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": false,
+        "top1_fault": false,
+        "probes": 0,
+        "score": 0.6171,
+        "fault": "bad_deploy",
+        "root": "auth",
+        "blind_level": 0.0,
+        "conditions": [
+          "red herring",
+          "faulty exporter"
+        ]
+      },
+      {
+        "id": "sweep-00-53",
+        "decision": "act",
+        "action": [
+          "failover",
+          "vector-store"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": true,
+        "top1_fault": false,
+        "probes": 0,
+        "score": 0.8233,
+        "fault": "noisy_neighbour",
+        "root": "embedding",
+        "blind_level": 0.0,
+        "conditions": [
+          "faulty exporter"
+        ]
+      },
+      {
+        "id": "sweep-00-55",
+        "decision": "act",
+        "action": [
+          "failover",
+          "db"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": false,
+        "top1_fault": false,
+        "probes": 0,
+        "score": 0.6484,
+        "fault": "resource_exhaustion",
+        "root": "payment",
+        "blind_level": 0.0,
+        "conditions": [
+          "red herring",
+          "shared exporter",
+          "faulty exporter"
+        ]
+      },
+      {
+        "id": "sweep-10-19",
+        "decision": "act",
+        "action": [
+          "failover",
+          "embedding"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": false,
+        "top1_fault": false,
+        "probes": 1,
+        "score": 0.6288,
+        "fault": "resource_exhaustion",
+        "root": "llm-gateway",
+        "blind_level": 0.1,
+        "conditions": [
+          "faulty exporter"
+        ]
+      },
+      {
+        "id": "sweep-10-27",
+        "decision": "act",
+        "action": [
+          "failover",
+          "cache"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": true,
+        "top1_fault": false,
+        "probes": 0,
+        "score": 0.8098,
+        "fault": "noisy_neighbour",
+        "root": "db",
+        "blind_level": 0.1,
+        "conditions": [
+          "faulty exporter"
+        ]
+      },
+      {
+        "id": "sweep-10-58",
+        "decision": "act",
+        "action": [
+          "failover",
+          "cache"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": false,
+        "top1_fault": false,
+        "probes": 0,
+        "score": 0.6843,
+        "fault": "noisy_neighbour",
+        "root": "db",
+        "blind_level": 0.1,
+        "conditions": [
+          "root blind",
+          "shared exporter"
+        ]
+      },
+      {
+        "id": "sweep-20-28",
+        "decision": "act",
+        "action": [
+          "scale_out",
+          "checkout"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": true,
+        "top1_fault": false,
+        "probes": 1,
+        "score": 0.6195,
+        "fault": "network_partition",
+        "root": "auth",
+        "blind_level": 0.2,
+        "conditions": [
+          "red herring"
+        ]
+      },
+      {
+        "id": "sweep-30-01",
+        "decision": "act",
+        "action": [
+          "failover",
+          "vector-store"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": false,
+        "top1_fault": false,
+        "probes": 0,
+        "score": 0.6668,
+        "fault": "noisy_neighbour",
+        "root": "worker",
+        "blind_level": 0.3,
+        "conditions": [
+          "root blind"
+        ]
+      },
+      {
+        "id": "sweep-30-02",
+        "decision": "act",
+        "action": [
+          "failover",
+          "vector-store"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": false,
+        "top1_fault": false,
+        "probes": 0,
+        "score": 0.6641,
+        "fault": "noisy_neighbour",
+        "root": "embedding",
+        "blind_level": 0.3,
+        "conditions": [
+          "root blind"
+        ]
+      },
+      {
+        "id": "sweep-30-18",
+        "decision": "act",
+        "action": [
+          "rollback",
+          "search"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": true,
+        "top1_fault": false,
+        "probes": 0,
+        "score": 0.6671,
+        "fault": "config_error",
+        "root": "api-gateway",
+        "blind_level": 0.3,
+        "conditions": [
+          "red herring"
+        ]
+      },
+      {
+        "id": "sweep-30-58",
+        "decision": "act",
+        "action": [
+          "failover",
+          "db"
+        ],
+        "correct": false,
+        "unsafe": true,
+        "top1": false,
+        "top3": true,
+        "top1_fault": false,
+        "probes": 0,
+        "score": 0.662,
+        "fault": "noisy_neighbour",
+        "root": "cache",
+        "blind_level": 0.3,
+        "conditions": [
+          "root blind"
+        ]
+      }
+    ]
+  },
+  "operating_curve": {
+    "faultweaver": {
+      "0.4": {
+        "n": 240,
+        "top1": 0.8958,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8958,
+        "correct_fix": 0.8958,
+        "unsafe": 0.0875,
+        "unsafe_n": 21,
+        "escalated": 0.0167,
+        "unsafe_given_act": 0.089,
+        "mean_probes": 0.121
+      },
+      "0.5": {
+        "n": 240,
+        "top1": 0.8958,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8958,
+        "correct_fix": 0.8958,
+        "unsafe": 0.0625,
+        "unsafe_n": 15,
+        "escalated": 0.0417,
+        "unsafe_given_act": 0.0652,
+        "mean_probes": 0.283
+      },
+      "0.6": {
+        "n": 240,
+        "top1": 0.9,
+        "top3": 0.9708,
+        "top1_with_fault": 0.9,
+        "correct_fix": 0.9,
+        "unsafe": 0.0458,
+        "unsafe_n": 11,
+        "escalated": 0.0542,
+        "unsafe_given_act": 0.0485,
+        "mean_probes": 0.442
+      },
+      "0.7": {
+        "n": 240,
+        "top1": 0.9,
+        "top3": 0.9708,
+        "top1_with_fault": 0.9,
+        "correct_fix": 0.8958,
+        "unsafe": 0.025,
+        "unsafe_n": 6,
+        "escalated": 0.0792,
+        "unsafe_given_act": 0.0271,
+        "mean_probes": 0.838
+      },
+      "0.8": {
+        "n": 240,
+        "top1": 0.9,
+        "top3": 0.9708,
+        "top1_with_fault": 0.9,
+        "correct_fix": 0.8292,
+        "unsafe": 0.025,
+        "unsafe_n": 6,
+        "escalated": 0.1458,
+        "unsafe_given_act": 0.0293,
+        "mean_probes": 1.383
+      }
+    },
+    "dwc_no_probes": {
+      "0.4": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.8333,
+        "unsafe": 0.0875,
+        "unsafe_n": 21,
+        "escalated": 0.0792,
+        "unsafe_given_act": 0.095,
+        "mean_probes": 0.0
+      },
+      "0.5": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.7625,
+        "unsafe": 0.0583,
+        "unsafe_n": 14,
+        "escalated": 0.1792,
+        "unsafe_given_act": 0.0711,
+        "mean_probes": 0.0
+      },
+      "0.6": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.6875,
+        "unsafe": 0.0375,
+        "unsafe_n": 9,
+        "escalated": 0.275,
+        "unsafe_given_act": 0.0517,
+        "mean_probes": 0.0
+      },
+      "0.7": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.4917,
+        "unsafe": 0.0083,
+        "unsafe_n": 2,
+        "escalated": 0.5,
+        "unsafe_given_act": 0.0167,
+        "mean_probes": 0.0
+      },
+      "0.8": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.3417,
+        "unsafe": 0.0083,
+        "unsafe_n": 2,
+        "escalated": 0.65,
+        "unsafe_given_act": 0.0238,
+        "mean_probes": 0.0
+      }
+    },
+    "dwc_no_penalties": {
+      "0.4": {
+        "n": 240,
+        "top1": 0.8917,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8833,
+        "correct_fix": 0.8833,
+        "unsafe": 0.1042,
+        "unsafe_n": 25,
+        "escalated": 0.0125,
+        "unsafe_given_act": 0.1055,
+        "mean_probes": 0.042
+      },
+      "0.5": {
+        "n": 240,
+        "top1": 0.8958,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8875,
+        "correct_fix": 0.8875,
+        "unsafe": 0.0708,
+        "unsafe_n": 17,
+        "escalated": 0.0417,
+        "unsafe_given_act": 0.0739,
+        "mean_probes": 0.15
+      },
+      "0.6": {
+        "n": 240,
+        "top1": 0.9,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8917,
+        "correct_fix": 0.8917,
+        "unsafe": 0.0542,
+        "unsafe_n": 13,
+        "escalated": 0.0542,
+        "unsafe_given_act": 0.0573,
+        "mean_probes": 0.275
+      },
+      "0.7": {
+        "n": 240,
+        "top1": 0.9,
+        "top3": 0.9708,
+        "top1_with_fault": 0.9,
+        "correct_fix": 0.9,
+        "unsafe": 0.0375,
+        "unsafe_n": 9,
+        "escalated": 0.0625,
+        "unsafe_given_act": 0.04,
+        "mean_probes": 0.55
+      },
+      "0.8": {
+        "n": 240,
+        "top1": 0.9,
+        "top3": 0.9708,
+        "top1_with_fault": 0.9,
+        "correct_fix": 0.8833,
+        "unsafe": 0.0333,
+        "unsafe_n": 8,
+        "escalated": 0.0833,
+        "unsafe_given_act": 0.0364,
+        "mean_probes": 1.05
+      }
+    },
+    "confidence_gate": {
+      "0.5": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.8792,
+        "unsafe": 0.1208,
+        "unsafe_n": 29,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.1208,
+        "mean_probes": 0.0
+      },
+      "0.55": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.8,
+        "unsafe": 0.0458,
+        "unsafe_n": 11,
+        "escalated": 0.1542,
+        "unsafe_given_act": 0.0542,
+        "mean_probes": 0.0
+      },
+      "0.6": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.6,
+        "unsafe": 0.025,
+        "unsafe_n": 6,
+        "escalated": 0.375,
+        "unsafe_given_act": 0.04,
+        "mean_probes": 0.0
+      },
+      "0.65": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.5208,
+        "unsafe": 0.0125,
+        "unsafe_n": 3,
+        "escalated": 0.4667,
+        "unsafe_given_act": 0.0234,
+        "mean_probes": 0.0
+      },
+      "0.7": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.5042,
+        "unsafe": 0.0125,
+        "unsafe_n": 3,
+        "escalated": 0.4833,
+        "unsafe_given_act": 0.0242,
+        "mean_probes": 0.0
+      },
+      "0.75": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.4625,
+        "unsafe": 0.0125,
+        "unsafe_n": 3,
+        "escalated": 0.525,
+        "unsafe_given_act": 0.0263,
+        "mean_probes": 0.0
+      },
+      "0.8": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9708,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.375,
+        "unsafe": 0.0042,
+        "unsafe_n": 1,
+        "escalated": 0.6208,
+        "unsafe_given_act": 0.011,
+        "mean_probes": 0.0
+      }
+    }
+  },
+  "calibration": {
+    "dwc_before_probes": {
+      "brier": 0.1339,
+      "bins": [
+        {
+          "bin": "[0.0, 0.2)",
+          "n": 2,
+          "mean_score": 0.171,
+          "accuracy": 0.5
+        },
+        {
+          "bin": "[0.2, 0.4)",
+          "n": 17,
+          "mean_score": 0.307,
+          "accuracy": 0.588
+        },
+        {
+          "bin": "[0.4, 0.6)",
+          "n": 47,
+          "mean_score": 0.508,
+          "accuracy": 0.745
+        },
+        {
+          "bin": "[0.6, 0.8)",
+          "n": 90,
+          "mean_score": 0.69,
+          "accuracy": 0.922
+        },
+        {
+          "bin": "[0.8, 1.0)",
+          "n": 84,
+          "mean_score": 0.856,
+          "accuracy": 0.976
+        }
+      ]
+    },
+    "dwc_no_penalties_before_probes": {
+      "brier": 0.1009,
+      "bins": [
+        {
+          "bin": "[0.0, 0.2)",
+          "n": 0,
+          "mean_score": null,
+          "accuracy": null
+        },
+        {
+          "bin": "[0.2, 0.4)",
+          "n": 4,
+          "mean_score": 0.332,
+          "accuracy": 0.0
+        },
+        {
+          "bin": "[0.4, 0.6)",
+          "n": 33,
+          "mean_score": 0.523,
+          "accuracy": 0.606
+        },
+        {
+          "bin": "[0.6, 0.8)",
+          "n": 104,
+          "mean_score": 0.709,
+          "accuracy": 0.913
+        },
+        {
+          "bin": "[0.8, 1.0)",
+          "n": 99,
+          "mean_score": 0.862,
+          "accuracy": 0.97
+        }
+      ]
+    },
+    "confidence": {
+      "brier": 0.1249,
+      "bins": [
+        {
+          "bin": "[0.0, 0.2)",
+          "n": 0,
+          "mean_score": null,
+          "accuracy": null
+        },
+        {
+          "bin": "[0.2, 0.4)",
+          "n": 0,
+          "mean_score": null,
+          "accuracy": null
+        },
+        {
+          "bin": "[0.4, 0.6)",
+          "n": 90,
+          "mean_score": 0.552,
+          "accuracy": 0.744
+        },
+        {
+          "bin": "[0.6, 0.8)",
+          "n": 59,
+          "mean_score": 0.706,
+          "accuracy": 0.915
+        },
+        {
+          "bin": "[0.8, 1.0)",
+          "n": 91,
+          "mean_score": 0.832,
+          "accuracy": 0.989
+        }
+      ]
+    },
+    "faultweaver_final_dwc": {
+      "brier": 0.0794,
+      "bins": [
+        {
+          "bin": "[0.0, 0.2)",
+          "n": 13,
+          "mean_score": 0.0,
+          "accuracy": 0.0
+        },
+        {
+          "bin": "[0.2, 0.4)",
+          "n": 0,
+          "mean_score": null,
+          "accuracy": null
+        },
+        {
+          "bin": "[0.4, 0.6)",
+          "n": 1,
+          "mean_score": 0.6,
+          "accuracy": 1.0
+        },
+        {
+          "bin": "[0.6, 0.8)",
+          "n": 132,
+          "mean_score": 0.691,
+          "accuracy": 0.932
+        },
+        {
+          "bin": "[0.8, 1.0)",
+          "n": 95,
+          "mean_score": 0.856,
+          "accuracy": 0.979
+        }
+      ]
+    }
+  },
+  "seed_robustness": {
+    "8": {
+      "gala_like": {
+        "n": 240,
+        "top1": 0.8792,
+        "top3": 0.9625,
+        "top1_with_fault": 0.875,
+        "correct_fix": 0.875,
+        "unsafe": 0.125,
+        "unsafe_n": 30,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.125,
+        "mean_probes": 0.0
+      },
+      "confidence_gate": {
+        "n": 240,
+        "top1": 0.8792,
+        "top3": 0.9625,
+        "top1_with_fault": 0.875,
+        "correct_fix": 0.8625,
+        "unsafe": 0.0833,
+        "unsafe_n": 20,
+        "escalated": 0.0542,
+        "unsafe_given_act": 0.0881,
+        "mean_probes": 0.0
+      },
+      "dwc_no_penalties": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9625,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.8792,
+        "unsafe": 0.0667,
+        "unsafe_n": 16,
+        "escalated": 0.0542,
+        "unsafe_given_act": 0.0705,
+        "mean_probes": 0.271
+      },
+      "faultweaver": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9625,
+        "top1_with_fault": 0.8833,
+        "correct_fix": 0.8833,
+        "unsafe": 0.0292,
+        "unsafe_n": 7,
+        "escalated": 0.0875,
+        "unsafe_given_act": 0.032,
+        "mean_probes": 0.521
+      }
+    },
+    "9": {
+      "gala_like": {
+        "n": 240,
+        "top1": 0.8833,
+        "top3": 0.9667,
+        "top1_with_fault": 0.875,
+        "correct_fix": 0.875,
+        "unsafe": 0.125,
+        "unsafe_n": 30,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.125,
+        "mean_probes": 0.0
+      },
+      "confidence_gate": {
+        "n": 240,
+        "top1": 0.8833,
+        "top3": 0.9667,
+        "top1_with_fault": 0.875,
+        "correct_fix": 0.8583,
+        "unsafe": 0.0667,
+        "unsafe_n": 16,
+        "escalated": 0.075,
+        "unsafe_given_act": 0.0721,
+        "mean_probes": 0.0
+      },
+      "dwc_no_penalties": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9667,
+        "top1_with_fault": 0.8792,
+        "correct_fix": 0.8792,
+        "unsafe": 0.05,
+        "unsafe_n": 12,
+        "escalated": 0.0708,
+        "unsafe_given_act": 0.0538,
+        "mean_probes": 0.308
+      },
+      "faultweaver": {
+        "n": 240,
+        "top1": 0.8875,
+        "top3": 0.9667,
+        "top1_with_fault": 0.8833,
+        "correct_fix": 0.8833,
+        "unsafe": 0.0292,
+        "unsafe_n": 7,
+        "escalated": 0.0875,
+        "unsafe_given_act": 0.032,
+        "mean_probes": 0.533
+      }
+    },
+    "10": {
+      "gala_like": {
+        "n": 240,
+        "top1": 0.9167,
+        "top3": 0.9792,
+        "top1_with_fault": 0.9083,
+        "correct_fix": 0.9083,
+        "unsafe": 0.0917,
+        "unsafe_n": 22,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.0917,
+        "mean_probes": 0.0
+      },
+      "confidence_gate": {
+        "n": 240,
+        "top1": 0.9167,
+        "top3": 0.9792,
+        "top1_with_fault": 0.9083,
+        "correct_fix": 0.9,
+        "unsafe": 0.0458,
+        "unsafe_n": 11,
+        "escalated": 0.0542,
+        "unsafe_given_act": 0.0485,
+        "mean_probes": 0.0
+      },
+      "dwc_no_penalties": {
+        "n": 240,
+        "top1": 0.9167,
+        "top3": 0.9792,
+        "top1_with_fault": 0.9083,
+        "correct_fix": 0.9083,
+        "unsafe": 0.05,
+        "unsafe_n": 12,
+        "escalated": 0.0417,
+        "unsafe_given_act": 0.0522,
+        "mean_probes": 0.25
+      },
+      "faultweaver": {
+        "n": 240,
+        "top1": 0.9167,
+        "top3": 0.9792,
+        "top1_with_fault": 0.9167,
+        "correct_fix": 0.9167,
+        "unsafe": 0.025,
+        "unsafe_n": 6,
+        "escalated": 0.0583,
+        "unsafe_given_act": 0.0265,
+        "mean_probes": 0.496
+      }
+    },
+    "11": {
+      "gala_like": {
+        "n": 240,
+        "top1": 0.925,
+        "top3": 0.9792,
+        "top1_with_fault": 0.9083,
+        "correct_fix": 0.9083,
+        "unsafe": 0.0917,
+        "unsafe_n": 22,
+        "escalated": 0.0,
+        "unsafe_given_act": 0.0917,
+        "mean_probes": 0.0
+      },
+      "confidence_gate": {
+        "n": 240,
+        "top1": 0.925,
+        "top3": 0.9792,
+        "top1_with_fault": 0.9083,
+        "correct_fix": 0.8875,
+        "unsafe": 0.05,
+        "unsafe_n": 12,
+        "escalated": 0.0625,
+        "unsafe_given_act": 0.0533,
+        "mean_probes": 0.0
+      },
+      "dwc_no_penalties": {
+        "n": 240,
+        "top1": 0.925,
+        "top3": 0.9792,
+        "top1_with_fault": 0.9083,
+        "correct_fix": 0.9083,
+        "unsafe": 0.0583,
+        "unsafe_n": 14,
+        "escalated": 0.0333,
+        "unsafe_given_act": 0.0603,
+        "mean_probes": 0.225
+      },
+      "faultweaver": {
+        "n": 240,
+        "top1": 0.925,
+        "top3": 0.9833,
+        "top1_with_fault": 0.925,
+        "correct_fix": 0.925,
+        "unsafe": 0.0333,
+        "unsafe_n": 8,
+        "escalated": 0.0417,
+        "unsafe_given_act": 0.0348,
+        "mean_probes": 0.408
+      }
+    }
+  },
+  "inc22_with_honest_provenance": {
+    "id": "inc22-faulty-collector-mislabeled",
+    "decision": "act",
+    "action": [
+      "revert_config",
+      "search"
+    ],
+    "correct": true,
+    "unsafe": false,
+    "top1": true,
+    "top3": true,
+    "top1_fault": true,
+    "probes": 2,
+    "score": 0.8734
+  },
+  "provenance": {
+    "commit": "48d80a8be57677e78b87720c79d849c276cbf117",
+    "command": "python -m faultweaver bench --out reports",
+    "seed": 7,
+    "python": "3.10.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "dependencies": "none (stdlib only)",
+    "scenarios_sha256": "44ca2b0559424a66",
+    "generated_at": "2026-09-29T09:20:38+00:00"
+  }
+}
